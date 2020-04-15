@@ -127,3 +127,88 @@ function myMap() {
     };
     var map = new google.maps.Map(mapCanvas, mapOptions);
   }
+
+
+  const allWorksButton = document.querySelector('.portfolio__links_item_all');
+  const printButton =document.querySelector('.portfolio__links_item_print');
+  const identityButton = document.querySelector('.portfolio__links_item_identity');
+  const brandingButton = document.querySelector('.portfolio__links_item_branding');
+  const webButton = document.querySelector('.portfolio__links_item_web');
+  const htmlButton = document.querySelector('.portfolio__links_item_html');
+  const wordButton = document.querySelector('.portfolio__links_item_word');
+
+  const allWorksComp = document.querySelectorAll('.portfolio__prewiew_item');
+  const printComp =document.querySelectorAll('.print');
+  const identityComp = document.querySelectorAll('.identity');
+  const brandingComp = document.querySelectorAll('.branding');
+  const webComp = document.querySelectorAll('.web');
+  const htmlComp = document.querySelectorAll('.html');
+  const wordComp = document.querySelectorAll('.word');
+
+
+  allWorksButton.addEventListener('click', function() {
+      for (let i = 0; i < allWorksComp.length; i++) {
+          allWorksComp[i].style.display = 'flex';
+      }
+  })
+
+  printButton.addEventListener('click', function() {
+    for (let i = 0; i < allWorksComp.length; i++) {
+        allWorksComp[i].style.display = 'none';
+    }
+
+    for (let i = 0; i < printComp.length; i++) {
+        printComp[i].style.display = 'flex';
+    }
+})
+
+brandingButton.addEventListener('click', function() {
+    for (let i = 0; i < allWorksComp.length; i++) {
+        allWorksComp[i].style.display = 'none';
+    }
+
+    for (let i = 0; i < printComp.length; i++) {
+        brandingComp[i].style.display = 'flex';
+    }
+})
+
+identityButton.addEventListener('click', function() {
+    for (let i = 0; i < allWorksComp.length; i++) {
+        allWorksComp[i].style.display = 'none';
+    }
+
+    for (let i = 0; i < printComp.length; i++) {
+        identityComp[i].style.display = 'flex';
+    }
+})
+
+webButton.addEventListener('click', function() {
+    for (let i = 0; i < allWorksComp.length; i++) {
+        allWorksComp[i].style.display = 'none';
+    }
+
+    for (let i = 0; i < printComp.length; i++) {
+        webComp[i].style.display = 'flex';
+    }
+})
+
+htmlButton.addEventListener('click', function() {
+    for (let i = 0; i < allWorksComp.length; i++) {
+        allWorksComp[i].style.display = 'none';
+    }
+
+    for (let i = 0; i < printComp.length; i++) {
+        htmlComp[i].style.display = 'flex';
+    }
+})
+
+
+wordButton.addEventListener('click', function() {
+    for (let i = 0; i < allWorksComp.length; i++) {
+        allWorksComp[i].style.display = 'none';
+    }
+
+    for (let i = 0; i < printComp.length; i++) {
+        wordComp[i].style.display = 'flex';
+    }
+})

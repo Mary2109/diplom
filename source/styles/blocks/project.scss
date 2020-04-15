@@ -131,11 +131,15 @@
     font-weight: 700;
 }
 @media (max-width:520px){
+    .project__footer{
+        height: 100%;
+    }
     .project__prewiew{
         flex-wrap: wrap;
     }
     .project__prewiew_right{
         width: 100%;
+        
         &:hover{
             width: 100%;
         }
@@ -155,6 +159,11 @@
     }
     .project__footer_left{
         text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .project__button{
+        margin-bottom: 10px;
     }
 
 }

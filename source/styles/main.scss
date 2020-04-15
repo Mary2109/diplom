@@ -6,6 +6,9 @@ body{
     width: 80vw;
     
 }
+.unvisible {
+    display: none!important;
+}
 @import 'blocks/header.scss';
 @import 'blocks/main-layout.scss';
 @import 'blocks/about-us.scss';

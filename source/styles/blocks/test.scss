@@ -115,8 +115,12 @@
     }
     .test__prewiew_item_right{
         width: 100%;
+        align-items: center;
     }
     .test__text{
         width: 100%;
+    }
+    .test__prewiew_item_right_title{
+        text-align: center;
     }
 }
