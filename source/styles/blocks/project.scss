@@ -1,0 +1,160 @@
+.project{
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    &__title{
+        opacity: 0.8;
+        color: #333b46;
+        font-family: "Source Sans Pro";
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 12px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 35px;
+    }
+    &__text{
+        color: #81868e;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__prewiew{
+        display: flex;
+        
+        &_left{
+            height: 320px;
+            width: 33.3%;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            background-image: url('/img/design.png');
+            background-size: cover;
+            background-color: rgba(0,0,0,.6);
+            background-blend-mode: darken;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 300;
+            text-transform: uppercase;
+            &:hover{
+                width: 50%;
+                background-color: none;
+                background-blend-mode: normal;
+                p{
+                    opacity: 0;
+                }
+            }
+        }
+        &_center{
+            height: 320px;
+            width: 33.3%;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            background-image: url('/img/vintage.png');
+            background-color: rgba(0,0,0,.6);
+            background-blend-mode: darken;
+            background-size: cover;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 300;
+            text-transform: uppercase;
+            &:hover{
+                width: 50%;
+                background-color: none;
+                background-blend-mode: normal;
+                p{
+                    opacity: 0;
+                }
+            }
+        }
+        &_right{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            text-align: center;
+            width: 33.3%;
+            background-image: url('/img/branding.png');
+            background-color: rgba(0,0,0,.6);
+            background-blend-mode: darken;
+            height: 320px;
+            background-size: cover;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 300;
+            text-transform: uppercase;
+            &:hover{
+                width: 50%;
+                background-color: none;
+                background-blend-mode: normal;
+                p{
+                    opacity: 0;
+                }
+               
+            }
+        }
+    }
+    &__footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-image: url("/img/project__back.png");
+        background-color: #1faa8b;
+        background-blend-mode: darken;
+        height: 100px;
+        align-items: center;
+        flex-wrap: wrap;
+        &_left{
+            
+            color:#f7fcfb;
+            font-family: "Open Sans";
+            font-size: 20px;
+            font-weight: 400;
+            opacity: 0.8;
+        }
+    }
+    &__button{
+        width: 140px;
+        height: 40px;
+        background: none;
+        border-radius: 40px;
+        color: #ffffff;
+        font-size: 16px;
+    }
+
+}
+.white{
+    color: #ffffff;
+    font-weight: 700;
+}
+@media (max-width:520px){
+    .project__prewiew{
+        flex-wrap: wrap;
+    }
+    .project__prewiew_right{
+        width: 100%;
+        &:hover{
+            width: 100%;
+        }
+    }
+
+    .project__prewiew_center{
+        width: 100%;
+        &:hover{
+            width: 100%;
+        }
+    }
+    .project__prewiew_left{
+        width: 100%;
+        &:hover{
+            width: 100%;
+        }
+    }
+    .project__footer_left{
+        text-align: center;
+    }
+
+}

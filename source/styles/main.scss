@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    width: 80vw;
+    
+}
+@import 'blocks/header.scss';
+@import 'blocks/main-layout.scss';
+@import 'blocks/about-us.scss';
+@import 'blocks/detail.scss';
+@import 'blocks/project.scss';
+@import 'blocks/services.scss';
+@import 'blocks/impress.scss';
+@import 'blocks/portfolio.scss';
+@import 'blocks/team.scss';
+@import 'blocks/talk.scss';
+@import 'blocks/test.scss';
+@import 'blocks/news.scss';
+@import 'blocks/price.scss';
+@import 'blocks/subscribe.scss';
+@import 'blocks/contact.scss';
+@import 'blocks/submit.scss';
+@import 'blocks/map.scss';
+@import 'blocks/footer.scss';
