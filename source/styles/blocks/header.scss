@@ -56,12 +56,13 @@
         margin-bottom: 20px;
     }
     .header_right_item{
-        flex-direction: column;
-        height: 200px;
+        flex-wrap: wrap;
+        justify-content: center;
+        
         width: 100%;
     }
     .header{
-        height: 300px;
+        height: 150px;
         flex-wrap: wrap;
     }
     .header_right{
